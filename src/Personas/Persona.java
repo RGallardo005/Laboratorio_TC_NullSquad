@@ -46,5 +46,4 @@ public abstract class Persona {
         return "Persona{" + "nombre=" + nombre + ", id=" + id + ", email=" + email + ", telefono=" + telefono + '}';
     }
     
-    
 }
