@@ -12,10 +12,12 @@ public class TrabajadorSocial extends Persona {
     
     private String canton;
     
-    public TrabajadorSocial(String cedula, String nombre, String correo, String telefono, String canton){
-        super(cedula,nombre, correo, telefono);
+
+    public TrabajadorSocial(String nombre, int id, String email, String telefono, String canton){
+        super(nombre, id, email, telefono);
         this.canton = canton; 
     }
+
     
     public String getCanton(){
         return canton; 
@@ -26,6 +28,8 @@ public class TrabajadorSocial extends Persona {
     }
 
     
+
+    @Override
     public String toString() {
         return "TrabajadorSocial{" + "canton=" + canton + '}';
     }
